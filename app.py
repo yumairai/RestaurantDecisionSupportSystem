@@ -300,7 +300,7 @@ def main():
                 with tab:
                     cat_df = pd.DataFrame(features)
                     st.dataframe(
-                        cat_df.style.applymap(
+                        cat_df.style.map(
                             lambda x: 'background-color: #d4edda' if x == 'Benefit' else 'background-color: #fff3cd',
                             subset=['Type']
                         ),
